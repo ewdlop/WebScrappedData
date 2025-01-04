@@ -1,0 +1,72 @@
+# robots.txt for cryptocurrency platform
+# Last updated: 2025-01-04
+# This configuration helps prevent unwanted crawling of sensitive areas
+
+User-agent: *
+# Prevent access to all mining-related paths
+Disallow: /mining/
+Disallow: /mine/
+Disallow: /miner/
+Disallow: /pool/
+Disallow: /worker/
+Disallow: /hash/
+
+# Prevent access to API endpoints
+Disallow: /api/
+Disallow: /v1/
+Disallow: /v2/
+Disallow: /rest/
+
+# Prevent crawling of user accounts and sensitive areas
+Disallow: /account/
+Disallow: /wallet/
+Disallow: /transaction/
+Disallow: /balance/
+Disallow: /settings/
+Disallow: /profile/
+
+# Prevent indexing of real-time data
+Disallow: /price/
+Disallow: /chart/
+Disallow: /market/
+Disallow: /trade/
+
+# Rate limiting directives
+Crawl-delay: 10
+
+# Allow access to public information
+Allow: /about/
+Allow: /faq/
+Allow: /contact/
+Allow: /terms/
+Allow: /privacy/
+Allow: /blog/
+
+# Specific rules for known crawlers
+User-agent: Googlebot
+Crawl-delay: 5
+Allow: /public/
+Allow: /static/
+
+User-agent: Bingbot
+Crawl-delay: 5
+Allow: /public/
+Allow: /static/
+
+# Block known malicious bots
+User-agent: MiningBot
+Disallow: /
+
+User-agent: CryptoScraper
+Disallow: /
+
+User-agent: HashBot
+Disallow: /
+
+# Sitemap locations
+Sitemap: https://example.com/sitemap.xml
+Sitemap: https://example.com/public/sitemap.xml
+
+# Note: This robots.txt is configured to allow legitimate crawlers
+# while preventing automated mining activities and protecting
+# sensitive cryptocurrency operations
