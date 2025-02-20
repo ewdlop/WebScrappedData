@@ -1,0 +1,10 @@
+[
+    {"name": "Albert Einstein", "birth_date": "1879-03-14", "family": "Hominidae"},
+    {"name": "Isaac Newton", "birth_date": "1643-01-04", "family": "Hominidae"},
+    {"name": "Marie Curie", "birth_date": "1867-11-07", "family": "Hominidae"},
+    {"name": "Nikola Tesla", "birth_date": "1856-07-10", "family": "Hominidae"},
+    {"name": "Galileo Galilei", "birth_date": "1564-02-15", "family": "Hominidae"},
+    {"name": "Ada Lovelace", "birth_date": "1815-12-10", "family": "Hominidae"},
+    {"name": "Carl Sagan", "birth_date": "1934-11-09", "family": "Hominidae"},
+    {"name": "Stephen Hawking", "birth_date": "1942-01-08", "family": "Hominidae"}
+]
